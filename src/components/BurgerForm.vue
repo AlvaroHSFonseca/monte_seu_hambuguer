@@ -1,7 +1,6 @@
 <template>
   <div>
     <Message :msg="msg" v-show="msg" />
-    <p>Burger form component</p>
     <div>
       <form id="burger-form" @submit="createBurger">
         <div class="input-container">
@@ -133,6 +132,7 @@ export default {
 label {
   font-weight: bold;
   margin-bottom: 15px;
+  margin-left: 50px;
   color: #222;
   padding: 5px 10px;
   border-left: 4px solid #fcba03;
@@ -140,6 +140,7 @@ label {
 
 input,
 select {
+  margin-left: 50px;
   padding: 5px 10px;
   width: 300px;
 }
@@ -157,7 +158,7 @@ select {
   display: flex;
   align-items: flex-start;
   width: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .checkbox-container span,
